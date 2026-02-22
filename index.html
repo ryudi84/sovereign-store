@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Digital — Developer Tools & Templates</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: { 50:'#f0f9ff', 100:'#e0f2fe', 200:'#bae6fd', 300:'#7dd3fc', 400:'#38bdf8', 500:'#0ea5e9', 600:'#0284c7', 700:'#0369a1' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%); }
+        .card-hover { transition: transform 0.2s, box-shadow 0.2s; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+        .glow { box-shadow: 0 0 40px rgba(14, 165, 233, 0.15); }
+    </style>
+</head>
+<body class="gradient-bg text-gray-100 font-sans min-h-screen">
+
+    <!-- Nav -->
+    <nav class="border-b border-gray-800 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-brand-500 rounded-lg flex items-center justify-center font-bold text-white">S</div>
+                <span class="text-xl font-bold">Sovereign Digital</span>
+            </div>
+            <div class="text-sm text-gray-400">Ship faster. Build better.</div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="max-w-6xl mx-auto px-6 py-20 text-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+            Production-Ready<br>
+            <span class="text-brand-400">Developer Tools</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10">
+            Templates, prompts, and toolkits that save you hours of work. 
+            Built for developers who ship.
+        </p>
+    </section>
+
+    <!-- Products -->
+    <section class="max-w-6xl mx-auto px-6 pb-20">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Product 1: SaaS Templates -->
+            <div class="bg-gray-800/60 border border-gray-700 rounded-2xl p-8 card-hover glow">
+                <div class="text-3xl mb-4">🎨</div>
+                <h3 class="text-xl font-bold mb-2">10 SaaS Landing Page Templates</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                    Production-ready HTML + Tailwind CSS templates. Startup, AI tool, dev tool, fintech, marketplace — 10 complete landing pages. Open in browser, customize, deploy.
+                </p>
+                <ul class="text-sm text-gray-500 mb-6 space-y-1">
+                    <li>✓ 10 unique industry templates</li>
+                    <li>✓ Fully responsive & accessible</li>
+                    <li>✓ No build step — pure HTML</li>
+                    <li>✓ Tailwind CSS v3</li>
+                    <li>✓ Commercial license included</li>
+                </ul>
+                <div class="flex items-center justify-between">
+                    <span class="text-2xl font-bold text-brand-400">$12</span>
+                    <a href="#buy-templates" class="bg-brand-500 hover:bg-brand-600 text-white px-6 py-2.5 rounded-lg font-semibold text-sm transition">
+                        Get Templates
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 2: 100 Dev Prompts -->
+            <div class="bg-gray-800/60 border border-gray-700 rounded-2xl p-8 card-hover glow">
+                <div class="text-3xl mb-4">⚡</div>
+                <h3 class="text-xl font-bold mb-2">100 Production Prompts for Devs</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                    Battle-tested prompts for debugging, code review, architecture, testing, refactoring, and documentation. Each with variables, expected output, and real examples.
+                </p>
+                <ul class="text-sm text-gray-500 mb-6 space-y-1">
+                    <li>✓ 100 structured prompts</li>
+                    <li>✓ 10 categories (debug, review, arch...)</li>
+                    <li>✓ JSON + Markdown formats</li>
+                    <li>✓ Copy-paste ready</li>
+                    <li>✓ Free updates</li>
+                </ul>
+                <div class="flex items-center justify-between">
+                    <span class="text-2xl font-bold text-brand-400">$9</span>
+                    <a href="#buy-prompts" class="bg-brand-500 hover:bg-brand-600 text-white px-6 py-2.5 rounded-lg font-semibold text-sm transition">
+                        Get Prompts
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 3: JSON Toolkit -->
+            <div class="bg-gray-800/60 border border-gray-700 rounded-2xl p-8 card-hover glow">
+                <div class="text-3xl mb-4">🔧</div>
+                <h3 class="text-xl font-bold mb-2">JSON Developer Toolkit</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                    Format, validate, diff, and transform JSON in the browser. No data leaves your machine. Built for devs who work with APIs and configs daily.
+                </p>
+                <ul class="text-sm text-gray-500 mb-6 space-y-1">
+                    <li>✓ Format & validate JSON</li>
+                    <li>✓ Diff two JSON objects</li>
+                    <li>✓ JSON ↔ YAML/CSV conversion</li>
+                    <li>✓ 100% client-side (private)</li>
+                    <li>✓ Free — open in browser</li>
+                </ul>
+                <div class="flex items-center justify-between">
+                    <span class="text-2xl font-bold text-brand-400">Free</span>
+                    <a href="tools/json-toolkit.html" class="bg-gray-700 hover:bg-gray-600 text-white px-6 py-2.5 rounded-lg font-semibold text-sm transition">
+                        Open Tool
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Trust / About -->
+    <section class="border-t border-gray-800 py-16">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold mb-4">Built for developers, by developers</h2>
+            <p class="text-gray-400 mb-8">
+                Every product is tested in real projects before listing. No filler, no fluff — just tools that save you time. 
+                Updates are free forever.
+            </p>
+            <div class="flex items-center justify-center gap-8 text-sm text-gray-500">
+                <div>📦 Instant delivery</div>
+                <div>🔄 Free updates</div>
+                <div>💬 Support included</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 py-8 text-center text-sm text-gray-600">
+        <p>© 2026 Sovereign Digital. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
